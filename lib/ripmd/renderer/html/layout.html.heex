@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.5"></script>
+    <.style />
+  </head>
+  <body>
+    <div class="container markdown-body">
+      <h1><%= @notebook.name %></h1>
+      <.section :for={section <- @notebook.sections} section={section} />
+    </div>
+  </body>
+</html>
